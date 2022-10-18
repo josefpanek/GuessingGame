@@ -25,6 +25,7 @@
         <TextBlock Name="textBlockMessage" TextAlignment="Center" Width="300" Margin="-150,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" />
         
         <TextBox Name="textBoxGuess" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="0" Grid.Row="3"/>
+        <TextBlock Name="textBlockTest" Margin="10,0,10,0" Text="Testing TextBlock (just for DEV purposes)" TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Foreground="Red"/>
 
         <ComboBox Name="comboBoxUpperLimit" Margin="30,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="0" Grid.Row="1" SelectedIndex="0">
             <ListBoxItem Content="10"/>
@@ -33,8 +34,6 @@
 
         <Button  Name="buttonStart" Content="START" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="1" Grid.Row="1" Click="buttonStart_Click"/>
         <Button  Name="buttonGuess" Content="GUESS" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="1" Grid.Row="3" Click="buttonGuess_Click"/>
-        
-        <TextBlock Name="test" Grid.Column="1" HorizontalAlignment="Left" Margin="175,11,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

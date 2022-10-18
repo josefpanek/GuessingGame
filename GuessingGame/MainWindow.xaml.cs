@@ -37,7 +37,7 @@ namespace GuessingGame
         private void buttonStart_Click(object sender, RoutedEventArgs e) //TODO: How to name the controls? (capital B?)
         {
             resultInt = random.Next(0, int.Parse(comboBoxUpperLimit.Text) + 1);
-            test.Text = resultInt.ToString();
+            textBlockTest.Text = resultInt.ToString();
             buttonGuess.IsEnabled = true;
             buttonStart.IsEnabled = false;
             textBoxGuess.IsEnabled = true;
