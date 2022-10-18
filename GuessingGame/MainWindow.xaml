@@ -19,20 +19,22 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
-        <TextBlock Text="Guess:" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+        <TextBlock Text="Range:" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
         <TextBlock Text="0 -" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1"/>
-        <TextBlock Text="Range:" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"/>
-        <TextBlock TextAlignment="Center" Width="150" Margin="-75,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" />
+        <TextBlock Text="Guess:" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"/>
+        <TextBlock Name="textBlockMessage" TextAlignment="Center" Width="300" Margin="-150,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" />
         
-        <TextBox Text="TextBox" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="0" Grid.Row="3"/>
+        <TextBox Name="textBoxGuess" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="0" Grid.Row="3"/>
 
-        <ComboBox Margin="30,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="0" Grid.Row="1" SelectedIndex="0">
+        <ComboBox Name="comboBoxUpperLimit" Margin="30,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="0" Grid.Row="1" SelectedIndex="0">
             <ListBoxItem Content="10"/>
             <ListBoxItem Content="100"/>
         </ComboBox>
 
-        <Button  Name="buttonStart" Content="START" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="1" Grid.Row="1"/>
-        <Button  Name="buttonGuess" Content="GUESS" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="1" Grid.Row="3"/>
+        <Button  Name="buttonStart" Content="START" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="1" Grid.Row="1" Click="buttonStart_Click"/>
+        <Button  Name="buttonGuess" Content="GUESS" Margin="10,0,10,0" VerticalAlignment="Center" MinHeight="22" Grid.Column="1" Grid.Row="3" Click="buttonGuess_Click"/>
         
+        <TextBlock Name="test" Grid.Column="1" HorizontalAlignment="Left" Margin="175,11,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
